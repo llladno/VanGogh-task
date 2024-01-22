@@ -1,0 +1,40 @@
+@mixin default-btn {
+  background: $red-color;
+  color: white;
+  border: 1px solid $red-color;
+  border-radius: 8px;
+}
+
+@mixin container-xxl {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+@mixin container-xl{
+  width: 95%;
+  min-width: 768px;
+}
+
+@mixin container-md{
+  width: 95%;
+  min-width: 480px;
+}
+
+@mixin container-sm{
+  max-width: 500px;
+  width: 100%;
+  min-width: 200px;
+}
+
+@mixin showOther {
+  .other {
+    display: flex;
+    justify-content: space-between;
+  }
+  .headerBtns{
+    display: none;
+  }
+  .phoneNumber {
+    display: none;
+  }
+}

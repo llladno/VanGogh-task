@@ -1,0 +1,72 @@
+$breakepoint-xxl: 1920px;
+$breakepoint-xl: 1440px;
+$breakepoint-md: 768px;
+$breakepoint-sm: 425px;
+
+
+
+@media (max-width: $breakepoint-xxl) {
+  .container {
+    @include container-xxl;
+  }
+
+  .other {
+    width: 25%;
+    display: none;
+  }
+}
+
+@media (max-width: $breakepoint-xl) {
+  .pricenewbtn{
+    display: block;
+    width: 150px;
+    button{
+      width: 100%;
+    }
+    float: right;
+    left: -150px;
+    height: 50px;
+  }
+
+  .pricenewbtn2{
+    position: absolute;
+    top: 150px;
+    display: block;
+    width: 150px;
+    button{
+      width: 100%;
+    }
+    left: -150px !important;
+    height: 50px;
+  }
+  .container {
+    @include container-xl;
+  }
+ @include showOther;
+}
+@media only screen and (max-width: 768px) {
+  .payServices{
+    height: 50px;
+  }
+  .coverText{
+    padding-left: 20px !important;
+  }
+  .servicespay{
+    display: none;
+  }
+  .container {
+    @include container-sm;
+  }
+  @include showOther;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .container {
+    @include container-md;
+  }
+.coverText{
+  padding-left: 50px !important;
+}
+  @include showOther;
+}
+

@@ -1,0 +1,75 @@
+header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .pricenewbtn{
+    display: none;
+    position: absolute;
+  }
+
+  .pricenewbtn2{
+    display: none;
+    position: absolute;
+    left: 500px;
+  }
+
+  .buttonMore{
+    border: none;
+    background: none;
+  }
+
+  .headerBtns{
+    height: 100%;
+
+    button{
+      position: relative;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 0 16px;
+      border: none;
+      background: white;
+      height: 100%;
+      font-weight: 400;
+    }
+  }
+
+  button:hover{
+    background: #efefef;
+
+  }
+
+.phoneNumber {
+  color: $red-color;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+  .pricenewbtnHover:hover + .pricenewbtn,.pricenewbtn:hover{
+      display: block;
+    height: 50px;
+    z-index: 30;
+  }
+
+  .pricenewbtnHover:hover + .pricenewbtn2,.pricenewbtn2:hover{
+    display: block;
+    left: 1200px;
+    height: 50px;
+    z-index: 30;
+  }
+
+  .logo {
+
+  }
+}
+
+.showBar{
+  position: absolute;
+  z-index: 22;
+  top: 64px;
+  right: 0;
+  display: flex !important;
+  flex-direction: column;
+  height: 250px !important;
+}
